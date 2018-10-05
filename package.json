@@ -26,7 +26,8 @@
     "prod-core": "docker-compose up -d core",
     "prod-editor": "docker-compose up -d editor",
     "d-log": "docker-compose logs -f --tail=20",
-    "pull": "git pull --recurse-submodules"
+    "pull": "git pull --recurse-submodules",
+    "install-all": "cd ./foreplay-cli && npm i && cd ../foreplay-client-core && npm i  && cd ../foreplay-client-editor && npm i"
   },
   "author": "",
   "license": "ISC",
