@@ -1,0 +1,49 @@
+<div class='container-fluid'>
+    <div class='row justify-content-sm-center'>
+        <form id='loginForm' class='col-xs-12 col-sm-4' onsubmit="this.checkValidity() && window.auth.login(this); return false">
+            <h1>Login</h1>
+            <div id='feedback_login' class="alert alert-danger" role="alert"></div>
+            <div class="form-group">
+                Email <input type='email' name='email' id='login_email' class='form-control' autocomplete=username required>
+            </div>
+            <div class="form-group">
+                Password <input type='password' name='password' id='login_password' class='form-control' autocomplete="current-password" required>
+            </div>
+            <div class="form-group">
+                <button type=submit class='form-control btn btn-primary login-button'>Login</button>
+                <button onclick='window.auth.toggleForm("register")' class='form-control btn btn-primary create-accout-button'>Create account</button>
+            </div>
+        </form>
+        <form id='registerForm' class='col-xs-12 col-sm-4' onsubmit="this.checkValidity() && window.auth.register(this); return false">
+            <h1>Create account</h1>
+            <div class="form-group">
+                Full Name <input type='text' name='name' class='form-control' required>
+            </div>
+            <div class="form-group">
+                Email <input type='email' name='email' class='form-control' autocomplete=username required>
+            </div>
+            <div class="form-group">
+                Password <input type='password' name='password' class='form-control' autocomplete="new-password" required>
+            </div>
+            <div class="form-group">
+                <button type=submit class='form-control btn btn-primary create-accout-button'>Create account</button>
+                <button onclick='window.auth.toggleForm("login")' class='form-control btn btn-primary login-button'>Login</button>
+            </div>
+        </form>
+        <!-- <form id='characterSelectForm' class='col-xs-12 col-sm-4' onsubmit="return false;">
+            <h1>Select a character</h1>
+            <div id='chars_select'></div>
+            <button onclick='window.auth.toggleForm("newCharacter")' class='form-control btn btn-primary'>New character</button>
+        </form>
+        <form id='newCharacterForm' class='col-xs-12 col-sm-4' onsubmit="window.auth.addCharacter(this); return false;">
+            <h1>New character</h1>
+            <div id='feedback_char_new' class="alert alert-danger" role="alert"></div>
+            <div class="form-group">
+              Name <input type='text' name='name' class='form-control' required autocomplete='off'>
+            </div>
+            <div class="form-group">
+              <button type=submit class='form-control btn btn-primary'>Create character</button>
+            </div>
+        </form> -->
+    </div>
+</div>

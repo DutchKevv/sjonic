@@ -1,0 +1,24 @@
+# OS / IDE 
+**/.idea
+**/.project
+**/.settings
+**/.DS_Store
+**/.vscode
+
+# GENERIC
+**/node_modules
+**/dist
+**/_log
+**/_temp
+**/*.map
+**/*.txt
+**/*.log
+**/*.js
+**/*.debug
+
+# DATA
+/data/public
+/data/db
+
+# CLI
+!/engine-cli/**/*.js

@@ -1,0 +1,16 @@
+#chat_input_container {
+    display: none;
+    bottom: 10px;
+    position: absolute;
+    left: 10px;
+    
+    #chat_input {
+        width: 500px;
+        opacity: 0.6;
+        background-color: #000;
+        color: #FFF;
+        border: 0px;
+        padding: 5px 8px;
+        margin-left: 5px;
+    }
+}

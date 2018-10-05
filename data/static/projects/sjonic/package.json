@@ -1,0 +1,27 @@
+{
+  "name": "sjonic",
+  "version": "0.0.1",
+  "description": "client for sjonic",
+  "main": "game/js/game.js",
+  "scripts": {
+    "start": "npm run dev-link && foreplay --watch --id=sjonic",
+    "prepare": "npm run dev-link",
+    "build": "engine-cli --prod",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev-link": "npm link ../../../../../@foreplay/cli"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.1.3",
+    "jquery": "^3.3.1",
+    "lodash-es": "^4.17.11",
+    "popper.js": "^1.14.4",
+    "typescript": "3.1.1"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.3.10",
+    "@types/lodash-es": "^4.17.1",
+    "@types/node": "10.11.4"
+  }
+}

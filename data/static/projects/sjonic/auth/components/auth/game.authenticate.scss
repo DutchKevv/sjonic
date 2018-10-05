@@ -1,0 +1,49 @@
+@import '~bootstrap/scss/_functions';
+@import "~bootstrap/scss/_variables";
+@import "~bootstrap/scss/_mixins";
+@import "~bootstrap/scss/_reboot";
+@import "~bootstrap/scss/_grid";
+@import "~bootstrap/scss/_forms";
+@import "~bootstrap/scss/_buttons";
+
+// font
+@import '../../assets/fonts/_almendra';
+
+body,
+html {
+    background-color: black;
+    color: #FFF;
+}
+
+button {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-family: 'Almendra SC', serif;
+    color: #CA7600;
+    font-weight: bold;
+}
+
+form {
+    display: none;
+    position: absolute !important;
+    top: 30%;
+
+    .input-error {
+        border: 2px solid red;
+        box-shadow: 3px 2px 6px rgba(255, 0, 0, 0.5);
+    }
+
+    &:first-child {
+        display: block;
+    }
+}
+
+.row {
+    justify-content: center;
+}
+
+#chars_select {
+    padding-bottom: 10px;
+}

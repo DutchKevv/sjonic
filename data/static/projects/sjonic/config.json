@@ -1,0 +1,41 @@
+{
+    "name": "sjonic",
+    "id": "sjonic",
+    "compile": {
+        "entries": {
+            "auth": {
+                "path": "./auth/auth.ts",
+                "indexHtml": {
+                    "chunks": [
+                        "auth"
+                    ],
+                    "template": "auth/index.html",
+                    "filename": "index.html"
+                }
+            },
+            "main": {
+                "path": "./game/js/game.ts",
+                "indexHtml": {
+                    "chunks": [
+                        "main",
+                        "editor"
+                    ],
+                    "template": "game/index.html",
+                    "filename": "index.game.html"
+                }
+            }
+        },
+        "copyFiles": [
+            {
+                "from": "assets",
+                "to": "assets"
+            },
+            {
+                "from": "manifest.json"
+            },
+            {
+                "from": "favicon.ico"
+            }
+        ]
+    }
+}

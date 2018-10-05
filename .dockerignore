@@ -1,0 +1,25 @@
+# OS / IDE 
+**/.idea
+**/.project
+**/.settings
+**/.DS_Store
+**/.vscode
+
+### global
+**/Dockerfile
+**/node_modules
+**/dist
+**/_log
+**/_temp
+**/.git
+**/.gitignore
+**/*.map
+**/*.js
+**/*.md
+**/*.yml
+**/*.txt
+**/*.log
+**/*.tmp
+
+# DATA
+/data/public

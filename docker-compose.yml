@@ -1,0 +1,59 @@
+version: '3.3'
+
+services:
+  nginx:
+    restart: always
+    build: ./foreplay-server-nginx
+    image: nginx
+    container_name: nginx 
+    volumes:
+      - ./data/public:/usr/src/app/data/public
+      - ./foreplay-server-nginx/pages:/usr/src/app/foreplay-server-nginx/pages
+      - ./foreplay-server-nginx/ssl:/usr/src/app/foreplay-server-nginx/ssl:ro
+      # - ./server-nginx/config:/usr/src/app/server-nginx/config
+    links:
+      - core
+      - editor
+  mongo:
+    container_name: mongo
+    image: mongo
+    restart: always
+    ports:
+      - 27017:27017
+    environment:
+      MONGO_DATA_DIR: /data/db
+      MONGO_LOG_DIR: /dev/null
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+    volumes:
+      - /data/db:/data/db
+  editor:
+    restart: always
+    image: editor
+    container_name: editor
+    build:
+      context: ./
+      dockerfile: ./foreplay-server-editor/Dockerfile
+    volumes:
+      - ./shared:/usr/src/app/shared
+      - ./data/static:/usr/src/app/data/static
+      - ./data/public:/usr/src/app/data/public
+      - ./foreplay-server-editor/_log:/usr/src/app/foreplay-server-editor/_log
+      - ./foreplay-server-editor/scripts:/usr/src/app/foreplay-server-editor/scripts
+    depends_on:
+      - mongo
+  core:
+    restart: always
+    image: core
+    container_name: core
+    build:
+      context: ./
+      dockerfile: ./foreplay-server-core/Dockerfile
+    ports:
+      - 3002:3002
+    volumes:
+      - ./shared:/usr/src/app/shared
+      - ./data/public:/usr/src/app/data/public
+      - ./foreplay-server-core/_log:/usr/src/app/foreplay-server-core/_log
+    depends_on:
+      - mongo

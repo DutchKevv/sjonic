@@ -1,0 +1,18 @@
+[submodule "foreplay-cli"]
+	path = foreplay-cli
+	url = https://github.com/DutchKevv/foreplay-cli.git
+[submodule "foreplay-client-core"]
+	path = foreplay-client-core
+	url = https://github.com/DutchKevv/foreplay-client-core.git
+[submodule "foreplay-client-editor"]
+	path = foreplay-client-editor
+	url = https://github.com/DutchKevv/foreplay-client-editor.git
+[submodule "foreplay-shared"]
+	path = foreplay-shared
+	url = https://github.com/DutchKevv/foreplay-shared.git
+[submodule "foreplay-server-nginx"]
+	path = foreplay-server-nginx
+	url = https://github.com/DutchKevv/foreplay-server-nginx.git
+[submodule "foreplay-server-mongo"]
+	path = foreplay-server-mongo
+	url = https://github.com/DutchKevv/foreplay-server-mongo.git

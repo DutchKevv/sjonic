@@ -1,0 +1,8 @@
+{
+    "id": "sd",
+    "img": "item\\weapon\\sd.png",
+    "type": "item_weapon",
+    "name": "sd",
+    "width": "1",
+    "height": "1"
+}

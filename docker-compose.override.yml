@@ -1,0 +1,31 @@
+version: '3.3'
+
+services:
+  nginx:
+    ports:
+      - "5000:80"
+    build:
+      args:
+        RUNNING_ENV: dev    
+  mongo:
+    ports:
+      - 27017:27017
+  editor:
+    ports:
+      - 3001:3001
+    environment:
+      - NODE_ENV=development
+    command: npm start
+    volumes:
+      - ./foreplay-server-editor/src:/usr/src/app/foreplay-server-editor/src
+      - /usr/src/app/foreplay-server-editor/node_modules
+  core:
+    ports:
+      - 3002:3002
+    environment:
+      - NODE_ENV=development
+    command: npm start
+    volumes:
+      - ./foreplay-server-core/dist:/usr/src/app/foreplay-server-core/dist
+      - ./foreplay-server-core/src:/usr/src/app/foreplay-server-core/src
+      - /usr/src/app/foreplay-server-core/node_modules
