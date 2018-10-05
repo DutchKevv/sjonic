@@ -7,7 +7,7 @@ import * as mongoose from 'mongoose';
 import * as formidable from 'express-formidable';
 import * as mkdirp from 'mkdirp';
 import * as io from 'socket.io';
-import { API_ERROR_MAX_SIZE, API_ERROR_UNKNOWN } from '../../shared/constants';
+import { API_ERROR_MAX_SIZE, API_ERROR_UNKNOWN } from '@foreplay/shared/constants';
 import { config } from './config';
 
 const PATH_STATIC = path.join(__dirname, '../../static')

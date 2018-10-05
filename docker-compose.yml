@@ -35,11 +35,11 @@ services:
       context: ./
       dockerfile: ./foreplay-server-editor/Dockerfile
     volumes:
-      - ./shared:/usr/src/app/shared
       - ./data/static:/usr/src/app/data/static
       - ./data/public:/usr/src/app/data/public
       - ./foreplay-server-editor/_log:/usr/src/app/foreplay-server-editor/_log
       - ./foreplay-server-editor/scripts:/usr/src/app/foreplay-server-editor/scripts
+      - ./foreplay-shared:/usr/src/app/foreplay-shared
     depends_on:
       - mongo
   core:
@@ -52,7 +52,7 @@ services:
     ports:
       - 3002:3002
     volumes:
-      - ./shared:/usr/src/app/shared
+      - ./foreplay-shared:/usr/src/app/foreplay-shared
       - ./data/public:/usr/src/app/data/public
       - ./foreplay-server-core/_log:/usr/src/app/foreplay-server-core/_log
     depends_on:

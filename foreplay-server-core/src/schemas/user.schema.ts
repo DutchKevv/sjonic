@@ -1,9 +1,9 @@
 import { Schema, model } from 'mongoose';
 import { isEmail } from 'validator';
-import { USER_GENDER_UNKNOWN, USER_GENDER_MALE, USER_GENDER_FEMALE, USER_GENDER_OTHER } from '../../../shared/constants';
-import { countries } from "../../../shared/countries";
+import { USER_GENDER_UNKNOWN, USER_GENDER_MALE, USER_GENDER_FEMALE, USER_GENDER_OTHER } from '@foreplay/shared/constants';
+import { countries } from "@foreplay/shared/countries";
 import * as beautifyUnique from 'mongoose-beautiful-unique-validation';
-import { IReqUser } from '../../../shared/interfaces/request.interface';
+import { IReqUser } from '@foreplay/shared/interfaces/request.interface';
 
 
 export const UserSchema = new Schema(

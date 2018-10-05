@@ -3,7 +3,7 @@ import * as path from 'path';
 import * as sharp from 'sharp';
 import * as mkdirp from 'mkdirp';
 import * as packer from 'gamefroot-texture-packer';
-import { PLAYER_TYPE_NPC } from '../../../shared/constants';
+import { PLAYER_TYPE_NPC } from '@foreplay/shared/constants';
 import { GameObject } from '../schemas/gameobject.schema';
 import { fork } from 'child_process';
 

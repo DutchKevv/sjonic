@@ -1,4 +1,4 @@
-import { IPosition } from '../../../shared/interfaces/position.interface'
+import { IPosition } from '@foreplay/shared/interfaces/position.interface'
 import { Player } from './player.server';
 
 export class Map {

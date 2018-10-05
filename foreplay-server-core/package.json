@@ -10,6 +10,7 @@
   "author": "H.K.Brandsma",
   "license": "ISC",
   "dependencies": {
+    "@foreplay/shared": "file:../foreplay-shared",
     "bcryptjs": "2.4.3",
     "express": "4.16.3",
     "express-formidable": "1.0.0",
@@ -24,7 +25,7 @@
     "nodemon": "1.18.4",
     "socket.io": "2.1.1",
     "typescript": "3.1.1",
-    "validator": "10.8.0"
+    "validator": "^10.8.0"
   },
   "devDependencies": {
     "@types/bcryptjs": "2.4.2",

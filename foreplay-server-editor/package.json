@@ -9,6 +9,7 @@
   "author": "H.K.Brandsma",
   "license": "ISC",
   "dependencies": {
+    "@foreplay/shared": "file:../foreplay-shared",
     "bcryptjs": "^2.4.3",
     "copy-dir": "^0.4.0",
     "directory-tree": "2.1.0",

@@ -2,7 +2,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 import { Player } from '../classes/player.server';
 import { Map } from '../classes/map.server';
-import { API_ERROR_MAP_NOT_FOUND } from '../../../shared/constants'
+import { API_ERROR_MAP_NOT_FOUND } from '@foreplay/shared/constants'
 import { Character } from '../schemas/character.schema';
 
 const PATH_GAMES = path.join(__dirname, '../../../data/public/projects');

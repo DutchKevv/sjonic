@@ -10,10 +10,10 @@ RUN apk --update add imagemagick && \
     rm -rf /var/cache/apk/*
 
 # shared
-COPY /shared/ /usr/src/app/shared/
+COPY /foreplay-shared/ /usr/src/app/foreplay-shared/
 
 # server
-WORKDIR /usr/src/app/server-editor
-COPY /server-editor/package.json server-editor/tsconfig.json ./
+WORKDIR /usr/src/app/foreplay-server-editor
+COPY /foreplay-server-editor/package.json foreplay-server-editor/tsconfig.json ./
 RUN npm i --quiet --no-progress
-COPY /server-editor/src ./src
+COPY /foreplay-server-editor/src ./src

@@ -1,9 +1,9 @@
 import * as bcrypt from 'bcryptjs';
 import { User, UserSchema } from '../schemas/user.schema';
-import { API_ERROR_EXPIRED, API_ERROR_NOT_FOUND, PLAYER_TYPE_HUMAN } from '../../../shared/constants';
-import { IReqUser } from "../../../shared/interfaces/request.interface";
-import { IUser } from "../../../shared/interfaces/user.interface";
-import { ICharacter } from "../../../shared/interfaces/character.interface";
+import { API_ERROR_EXPIRED, API_ERROR_NOT_FOUND, PLAYER_TYPE_HUMAN } from '@foreplay/shared/constants';
+import { IReqUser } from "@foreplay/shared/interfaces/request.interface";
+import { IUser } from "@foreplay/shared/interfaces/user.interface";
+import { ICharacter } from "@foreplay/shared/interfaces/character.interface";
 import { Character } from '../schemas/character.schema';
 
 const RESET_PASSWORD_TOKEN_EXPIRE = 1000 * 60 * 60 * 24; // 24 hour

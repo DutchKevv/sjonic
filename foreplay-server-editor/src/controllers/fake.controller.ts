@@ -2,7 +2,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 import * as faker from 'faker';
 import * as request from 'requestretry';
-import { PLAYER_TYPE_NPC } from '../../../shared/constants';
+import { PLAYER_TYPE_NPC } from '@foreplay/shared/constants';
 
 export const fakeController = {
 

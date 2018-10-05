@@ -1,9 +1,9 @@
 import * as bcrypt from 'bcryptjs';
 import * as jwt from 'jsonwebtoken';
 import { User, UserSchema } from '../schemas/user.schema';
-import { API_ERROR_EXPIRED, API_ERROR_NOT_FOUND, USER_FETCH_TYPE_ACCOUNT_DETAILS, USER_FETCH_TYPE_PROFILE_SETTINGS, USER_FETCH_TYPE_SLIM } from '../../../shared/constants';
-import { IReqUser } from "../../../shared/interfaces/request.interface";
-import { IUser } from "../../../shared/interfaces/user.interface";
+import { API_ERROR_EXPIRED, API_ERROR_NOT_FOUND, USER_FETCH_TYPE_ACCOUNT_DETAILS, USER_FETCH_TYPE_PROFILE_SETTINGS, USER_FETCH_TYPE_SLIM } from '@foreplay/shared/constants';
+import { IReqUser } from "@foreplay/shared/interfaces/request.interface";
+import { IUser } from "@foreplay/shared/interfaces/user.interface";
 import { config } from '../config';
 
 const RESET_PASSWORD_TOKEN_EXPIRE = 1000 * 60 * 60 * 24; // 24 hour

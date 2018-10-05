@@ -8,7 +8,7 @@ import * as mongoose from 'mongoose';
 import * as io from 'socket.io';
 import * as expressJwt from 'express-jwt';
 import * as jwt from 'jsonwebtoken';
-import { API_ERROR_MAX_SIZE, API_ERROR_UNKNOWN, API_ERROR_FIELD_DUPLICATE, MONGO_ERROR_VALIDATION, MONGO_ERROR_KIND_DUPLICATE, MONGO_ERROR_KIND_REQUIRED, API_ERROR_FIELD_MISSING } from '../../shared/constants';
+import { API_ERROR_MAX_SIZE, API_ERROR_UNKNOWN, API_ERROR_FIELD_DUPLICATE, MONGO_ERROR_VALIDATION, MONGO_ERROR_KIND_DUPLICATE, MONGO_ERROR_KIND_REQUIRED, API_ERROR_FIELD_MISSING } from '@foreplay/shared/constants';
 import { config } from './config';
 import { GameController } from './controllers/game.controller';
 

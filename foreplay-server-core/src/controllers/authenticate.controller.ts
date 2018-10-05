@@ -1,7 +1,7 @@
 import * as jwt from 'jsonwebtoken';
 import { User } from '../schemas/user.schema';
-import { IUser } from "../../../shared/interfaces/user.interface";
-import { IReqUser } from '../../../shared/interfaces/request.interface';
+import { IUser } from "@foreplay/shared/interfaces/user.interface";
+import { IReqUser } from '@foreplay/shared/interfaces/request.interface';
 import { config } from '../config';
 import * as bcrypt from 'bcryptjs';
 import { characterController } from './character.controller';
