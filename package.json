@@ -5,7 +5,6 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "cd engine-cli && npm i && cd ../engine-core && npm i",
     "start": "npm stop && node ./shared/scripts/os.middleware.js --run=start-dev",
     "stop": "docker-compose kill mongo editor core nginx",
     "restart": "npm stop && npm start",
@@ -27,7 +26,7 @@
     "prod-editor": "docker-compose up -d editor",
     "d-log": "docker-compose logs -f --tail=20",
     "pull": "git pull --recurse-submodules",
-    "install-all": "cd ./foreplay-cli && npm i && cd ../foreplay-client-core && npm i  && cd ../foreplay-client-editor && npm i"
+    "postinstall": "cd ./foreplay-cli && npm i && cd ../foreplay-client-core && npm i  && cd ../foreplay-client-editor && npm i"
   },
   "author": "",
   "license": "ISC",
