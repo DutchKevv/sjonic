@@ -8,7 +8,7 @@
     "prepare": "npm run dev-link",
     "build": "engine-cli --prod",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev-link": "npm link ../../../../../@foreplay/cli"
+    "dev-link": "npm link ../../../../foreplay-cli"
   },
   "author": "",
   "license": "ISC",
