@@ -37,6 +37,6 @@
     "@types/morgan": "1.7.35",
     "@types/node": "^10.9.4",
     "@types/socket.io": "^1.4.38",
-    "tsc-watch": "1.0.29"
+    "tsc-watch": "1.0.28"
   }
 }

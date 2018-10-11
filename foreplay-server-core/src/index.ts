@@ -12,7 +12,7 @@ import { API_ERROR_MAX_SIZE, API_ERROR_UNKNOWN, API_ERROR_FIELD_DUPLICATE, MONGO
 import { config } from './config';
 import { GameController } from './controllers/game.controller';
 
-// error catching
+// global async error catching
 process.on('unhandledRejection', (reason, p) => {
     console.log('(custom message) Unhandled Rejection at: Promise ', p, ' reason: ', reason);
 
@@ -191,7 +191,7 @@ export const app = {
 
     connectMongo() {
         return new Promise((resolve, reject) => {
-            // mongoose.set('debug', process.env.NODE_ENV === 'development');
+
             (<any>mongoose).Promise = global.Promise; // Typescript quirk
 
             this.db = mongoose.connection;
