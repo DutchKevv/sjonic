@@ -19,3 +19,6 @@
 [submodule "foreplay-server-core"]
 	path = foreplay-server-core
 	url = https://github.com/DutchKevv/foreplay-server-core.git
+[submodule "foreplay-server-editor"]
+	path = foreplay-server-editor
+	url = https://github.com/DutchKevv/foreplay-server-editor.git
