@@ -16,3 +16,6 @@
 [submodule "foreplay-server-mongo"]
 	path = foreplay-server-mongo
 	url = https://github.com/DutchKevv/foreplay-server-mongo.git
+[submodule "foreplay-server-core"]
+	path = foreplay-server-core
+	url = https://github.com/DutchKevv/foreplay-server-core.git
